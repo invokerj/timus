@@ -8,7 +8,8 @@ unsigned long int id_m[maxn];
 int main (void)
 {
 	unsigned long int id;
-	unsigned int i, t, n ,m;
+	unsigned int i, t, n ;
+	int m;
 	scanf ("%d", &n);
 	for (i=0;i<n;i++) {
 		scanf ("%ld %d", &id, &m);

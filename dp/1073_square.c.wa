@@ -1,0 +1,23 @@
+//WA.
+//for example: take 12, the program is 9,1,1,1---4
+//but the result should be 4, 4, 4---3
+#include <stdio.h>
+#include <math.h>
+
+int main (void)
+{
+	int a, cnt, sq;
+
+	scanf ("%d", &sq);
+	cnt = 0;
+	while (sq>=4) {
+		a = (int )sqrt((double )sq);
+		cnt++;
+		sq -=a*a;
+	}
+	cnt+=sq;
+	printf ("%d\n",cnt);
+	return 0;
+
+
+}
